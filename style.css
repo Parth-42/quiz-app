@@ -1,0 +1,200 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+
+#title {
+    text-align: center;
+    color: rgb(228, 228, 228);
+    background-color: rgb(39, 39, 39);
+    position: relative;
+    top: 0;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1.5px;
+}
+
+
+
+#question {
+    border-radius: 1em;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0.1px 0.1px 10px 1px rgb(214, 214, 214);
+    padding: 20px 20px;
+    margin-top: 10vh;
+    font-size: 700;
+}
+
+.qTitle {
+    font-size: 1.5em;
+}
+
+label {
+    font-size: 1.2em;
+    cursor: pointer;
+    line-height: 2.3em;
+}
+
+input {
+    cursor: pointer;
+}
+
+.correct {
+    background-color: rgba(68, 160, 68, 0.9);
+    width: auto;
+    padding: 0.8em 1.6em;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+.incorrect {
+    background-color: rgba(221, 68, 68, 0.9);
+    width: auto;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+.warning {
+    background-color: rgb(233, 151, 0, 0.9);
+    width: auto;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+
+.buttons {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.5em;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 0.7em 1.4em;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#nextQuestion {
+    color: white;
+    background-color: rgb(233, 151, 0);
+}
+
+#nextQuestion:hover {
+    color: white;
+    background-color: rgb(221, 160, 45);
+}
+
+#submit {
+    color: white;
+    background-color: rgb(50, 163, 50);
+}
+
+#submit:hover {
+    background-color: rgb(68, 184, 68);
+}
+
+#finish {
+    color: white;
+    background-color: rgb(50, 163, 50);
+}
+
+#refresh {
+    color: white;
+    background-color: rgb(39, 39, 39);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+#refresh:hover {
+    color: white;
+    background-color: rgb(59, 59, 59);
+}
+
+#result {
+    border-radius: 1em;
+    margin: auto;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0.1px 0.1px 10px 1px rgb(214, 214, 214);
+    width: 70%;
+    margin: 1em auto;
+    padding: 2em 4em;
+    height: auto;
+}
+
+#totalMarks {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+#answerSheet {
+    font-size: 1.1em;
+}
+
+#answer {
+    background-color: rgb(43, 189, 43);
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+    color: rgb(240, 240, 240);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    #question {
+        width: 90%;
+    }
+
+    #title {
+        width: 100%;
+    }
+
+    .buttons {
+        transform: translateX(-20%);
+    }
+
+    #refresh {
+        transform: translateX(-10%);
+    }
+}
